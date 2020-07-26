@@ -1,0 +1,52 @@
+body{
+  background-color: #29303b;
+}
+
+.container{
+  padding-top: 20px;
+  width : 930px;
+}
+
+.page{
+  background-color:white;
+  height: 1214px;
+  padding-top: 120px;
+  padding-bottom: 110px;
+  padding-left: 100px;
+  padding-right: 100px;
+overflow: auto;
+
+}
+
+.row{
+  padding-bottom: 20px;
+}
+
+.title{
+  text-align: center;
+}
+
+.title2{
+  font-family: 'Dancing Script', cursive;
+  padding-bottom: 50px;
+}
+
+.title4{
+  font-family: 'Parisienne', cursive;
+  padding-bottom: 50px;
+}
+
+.title6{
+  font-family: 'Homemade Apple', cursive;
+  padding-bottom: 50px;
+}
+
+.title7{
+  font-family: 'Tangerine', cursive;
+  padding-bottom: 50px;
+}
+
+.stars{
+  font-family: 'Homemade Apple', cursive;
+
+}

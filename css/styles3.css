@@ -1,0 +1,147 @@
+body{
+  background-color: #29303b;
+}
+
+.container{
+  padding-top: 20px;
+  width : 930px !important;
+
+}
+
+.page{
+  background-color:white;
+  height: 1214px;
+  padding-top: 120px;
+  padding-bottom: 110px;
+  padding-left: 100px;
+  padding-right: 100px;
+overflow: auto;
+
+}
+
+.row{
+  padding-bottom: 20px;
+}
+
+.title2{
+  font-family: 'Dancing Script', cursive;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.title4{
+  font-family: 'Parisienne', cursive;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.title4 h1,h2{
+  font-size: 3rem;
+      color:black;
+}
+
+.title6{
+  font-family: 'Homemade Apple', cursive;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.title7{
+  font-family: 'Tangerine', cursive;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.stars{
+  font-family: 'Homemade Apple', cursive;
+
+}
+
+.contents{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  display: inline-block;
+    font-family: 'EB Garamond', serif;
+    font-size: 2rem;
+    color:black;
+    padding-bottom: 1rem;
+}
+
+a:hover{
+  text-decoration: none;
+  color:black;
+}
+
+#dedicace{
+  padding-top: 150px;
+  font-family: 'EB Garamond', serif;
+  color:black;
+}
+
+#dedicace h3{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#dedicace p{
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 25px;
+  text-align: justify;
+}
+
+#dedicace h5{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hidden{
+  display:none;
+}
+
+.word{
+  cursor:pointer;
+  position: relative;
+}
+
+.word:hover{
+  text-decoration: underline;
+}
+
+#Leon{
+    color:black;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.75rem;
+    padding-bottom: 0;
+}
+
+#Leon:hover{
+  text-decoration: none;
+  color:black;
+}
+
+audio{
+  position: fixed;
+  z-index: 1;
+  width:100%;
+  background-color: #f1f3f4;
+}
+
+audio:focus{
+  outline: none;
+}
+/* .word::after {
+  content: attr(title);
+  position: absolute;
+  top: 2em;
+  left: -10px;
+  font-size: 0.5em;
+  text-transform: uppercase;
+} */
