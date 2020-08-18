@@ -115,6 +115,10 @@ a:hover{
   text-decoration: underline;
 }
 
+.word .tooltip{
+  font-size: 2rem;
+}
+
 #Leon{
     color:black;
     font-family: 'EB Garamond', serif;
@@ -128,14 +132,48 @@ a:hover{
 }
 
 audio{
-  position: fixed;
-  z-index: 1;
   width:100%;
-  background-color: #f1f3f4;
 }
 
 audio:focus{
   outline: none;
+}
+
+.hidden{
+  display: none;
+}
+
+.audioContainer{
+  position: fixed;
+  z-index: 1;
+  width:100%;
+  background-color: #f1f3f4;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.audioContainer h6{
+  position: absolute;
+  z-index: 2;
+  left: 46%;
+}
+
+.chapitres{
+  font-family: 'EB Garamond', serif;
+}
+
+.chapitres h1{
+  text-align: center;
+  font-size: 2rem;
+}
+
+[titles]:hover:after{
+position:absolute;
+  content: attr(titles);
+  background:white;
+  padding: 0.5rem;
+  border:1px solid;
+  font-size:1rem;
 }
 /* .word::after {
   content: attr(title);
