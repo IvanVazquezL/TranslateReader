@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Translate Reader</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Favicons -->
+
+<link rel="stylesheet" href="css/chanson.css">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .blueT{
+        /* color:blue; */
+      }
+
+      .cursiveR{
+        /* color:red; */
+      }
+      .navbar{
+        height:10vh;
+      }
+
+      .carouselImg{
+        width:1350px;
+        height:624px;
+      }
+
+
+      .carousel-caption{
+        color:black;
+      }
+
+      footer{
+        height:100px;
+      }
+
+      footer p{
+        padding-top: 30px;
+        text-align: center;
+      }
+
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+
+  </head>
+  <body id="bootstrap-overrides">
+    <header>
+      <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><span class="blueT">Translate</span><i class="cursiveR">Reader</i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="books.html">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="exercises.html">Exercises</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+</header>
+<br>
+<h1>Complétez la chanson</h1>
+<br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/GeTn56-lahg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p><h2>Comme d'habitude - M. Pokora</h2></p>
+  <br>
+  <div class="chanson">
+  <h2>Je me lève et je te bouscule</h2>
+  <p>Me levanto y te empujo</p>
+  <h2>Tu ne te réveilles pas</h2>
+  <p>Tu no te despiertas</p>
+  <h2>Comme d'habitude</h2>
+  <p>Como de costumbre</p>
+  <h2>Sur toi je remonte le drap</h2>
+  <p>Sobre ti vuelvo a poner la sabana</p>
+  <h2>J'ai <input type="text" id="peur" id="peur"   onchange="chansonWord(id)"><span class="hidden">peur</span> que tu aies <input type="text" id="froid"   onchange="chansonWord(id)"><span class="hidden">froid</span></h2>
+<p>Tengo miedo de que tengas frío</p>
+  <h2>Comme d'habitude</h2>
+  <p>Como de costumbre</p>
+  <h2>Ma <input type="text" id="main"   onchange="chansonWord(id)"><span class="hidden">main</span> caresse tes <input type="text" id="cheveux"   onchange="chansonWord(id)"><span class="hidden">cheveux</span></h2>
+<p>Mi mano acaricia tus cabellos</p>
+  <h2>Presque malgré moi</h2>
+  <p>Casi a mi pesar</p>
+  <h2>Comme d'habitude</h2>
+  <p>Como de costumbre</p>
+  <h2>Mais toi tu me tournes le <input type="text" id="dos"   onchange="chansonWord(id)"><span class="hidden">dos</span></h2>
+  <p>Pero tu me das la espalda</p>
+  <h2>Comme d'habitude</h2>
+  <p>Como de costumbre</p>
+  <br>
+  <h2>Alors je m'habille très <input type="text" id="vite"   onchange="chansonWord(id)"><span class="hidden">vite</span></h2>
+  <p>Entonces me visto muy rápido</p>
+  <h2>Je sors de la <input type="text" id="chambre"   onchange="chansonWord(id)"><span class="hidden">chambre</span></h2>
+  <p>Salgo del cuarto</p>
+  <h2>Comme d'habitude</h2>
+  <p>Como de costumbre</p>
+  <h2>Tout seul je <input type="text" id="bois"   onchange="chansonWord(id)"><span class="hidden">bois</span> mon café</h2>
+  <p>Solo, tomo mi cafe</p>
+  <h2>Je suis en <input type="text" id="retard"   onchange="chansonWord(id)"><span class="hidden">retard</span></h2>
+  <p>Voy tarde</p>
+  <h2>Comme d'habitude</h2>
+  <p>Como de costumbre</p>
+  <h2>Sans bruit je quitte la <input type="text" id="maison"   onchange="chansonWord(id)"><span class="hidden">maison</span></h2>
+  <p>Sin hacer ruido salgo de la casa</p>
+  <h2>Tout est gris <input type="text" id="dehors"   onchange="chansonWord(id)"><span class="hidden">dehors</span></h2>
+<p>Todo es gris afuera</p>
+  <h2>Comme d'habitude</h2>
+  <p>Como de costumbre</p>
+  <h2>J'ai froid, je relève mon <input type="text" id="col"   onchange="chansonWord(id)"><span class="hidden">col</span></h2>
+  <p>Tengo frío, me levanto el cuello</p>
+  <h2>Comme d'habitude</h2>
+  <p>Como de costumbre</p>
+  <br>
+  <h2>Comme d'habitude, toute la <input type="text" id="journée" onchange="chansonWord(id)"><span class="hidden">journée</span></h2>
+  <p>Como de costumbre, durante el transcurso del día</p>
+  <h2>Je vais <input type="text" id="joeur" onchange="chansonWord(id)"><span class="hidden">joeur</span> à faire semblant</h2>
+  <p>Voy a jugar a pretender</p>
+  <h2>Comme d'habitude je vais <input type="text" id="sourire"   onchange="chansonWord(id)"><span class="hidden">sourire</span></h2>
+  <p>Como de costumbre voy a sonreír</p>
+  <h2>Comme d'habitude je vais même <input type="text" id="rire"   onchange="chansonWord(id)"><span class="hidden">rire</span></h2>
+  <p>Como de costumbre incluso me reiré</p>
+  <h2>Comme d'habitude, enfin je vais <input type="text" id="vivre"   onchange="chansonWord(id)"><span class="hidden">vivre</span></h2>
+<p>Como de costumbre, finalmente voy a vivir</p>
+  <h2>Comme d'habitude</h2>
+  <p>Como de costumbre</p>
+  <br>
+  <h2>Et puis le <input type="text" id="jour"   onchange="chansonWord(id)"><span class="hidden">jour</span> s'en ira</h2>
+  <p>Y luego el día se irá</p>
+  <h2>Moi je reviendrai</h2>
+  <p>Yo volveré</p>
+  <h2>Comme d'habitude</h2>
+  <p>Como de costumbre</p>
+  <h2>Et toi, tu seras <input type="text" id="sortie"   onchange="chansonWord(id)"><span class="hidden">sortie</span></h2>
+  <p>Y tu, tu estarás fuera</p>
+  <h2>Pas encore rentrée</h2>
+  <p>Sin regresar todavía</p>
+  <h2>Comme d'habitude</h2>
+  <p>Como de costumbre</p>
+  <h2>Tout seul j'irai me coucher</h2>
+  <p>Solo, me ire a acostar</p>
+  <h2>Dans ce grand <input type="text" id="lit"   onchange="chansonWord(id)"><span class="hidden">lit</span> froid</h2>
+  <p>En esta gran cama fría</p>
+  <h2>Comme d'habitude</h2>
+  <p>Como de costumbre</p>
+  <h2>Mes larmes, je les cacherai</h2>
+  <p>Mis lagrimas, las esconderé</p>
+  <h2>Comme d'habitude</h2>
+  <p>Como de costumbre</p>
+  <br>
+  <h2>Comme d'habitude, même la <input type="text" id="nuit"   onchange="chansonWord(id)"><span class="hidden">nuit</span></h2>
+  <p>Como de costumbre, incluso en la noche</p>
+  <h2>Je vais jouer à faire semblant</h2>
+  <p>Voy a jugar a pretender</p>
+  <h2>Comme d'habitude tu rentreras</h2>
+  <p>Como de costumbre tu volveras</p>
+  <h2>Comme d'habitude je t'attendrai</h2>
+  <p>Como de costumbre te esperaré</p>
+  <h2>Comme d'habitude tu me <input type="text" id="souriras"   onchange="chansonWord(id)"><span class="hidden">souriras</span></h2>
+  <p>Como de costumbre tu me sonreirás</p>
+  <h2>Comme d'habitude</h2>
+  <p>Como de costumbre</p>
+  <h2>Comme d'habitude tu te déshabilleras</h2>
+  <p>Como de costumbre te vas a desvestir</p>
+  <h2>Comme d'habitude tu te coucheras</h2>
+  <p>Como de costumbre te vas a acostar</p>
+  <h2>Comme d'habitude on s'embrassera</h2>
+  <p>Como de costumbre nos besaremos</p>
+  <h2>Comme d'habitude</h2>
+  <p>Como de costumbre</p>
+  <h2>Comme d'habitude on fera semblant</h2>
+  <p>Como de costumbre vamos a pretender</p>
+  <h2>Comme d'habitude on fera <input type="text" id="l'amour"   onchange="chansonWord(id)"><span class="hidden">l'amour</span></h2>
+  <p>Como de costumbre haremos el amor</p>
+  <h2>Comme d'habitude on fera semblant</h2>
+  <p>Como de costumbre vamos a pretender</p>
+  <h2>Comme d'habitude</h2>
+  <p>Como de costumbre</p>
+  <h2 class="note">Note: </h>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<footer class="text-muted navbar-dark bg-dark">
+  <div class="container">
+    <p> &copy; TranslateReader 2020</p>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="javascript/chanson.js" charset="utf-8"></script>
+</body>
+</html>

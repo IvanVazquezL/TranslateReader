@@ -15,7 +15,7 @@ body{
   padding-bottom: 110px;
   padding-left: 100px;
   padding-right: 100px;
-overflow: auto;
+  overflow: auto;
 
 }
 
@@ -115,10 +115,6 @@ a:hover{
   text-decoration: underline;
 }
 
-.word .tooltip{
-  font-size: 2rem;
-}
-
 #Leon{
     color:black;
     font-family: 'EB Garamond', serif;
@@ -158,6 +154,36 @@ audio:focus{
   left: 46%;
 }
 
+.audioContainerOne{
+  position: fixed;
+  z-index: 1;
+  width:100%;
+  background-color: #f1f3f4;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.audioContainerOne h6{
+  position: absolute;
+  z-index: 2;
+  left: 46%;
+}
+
+.audioContainerTwo{
+  position: fixed;
+  z-index: 1;
+  width:100%;
+  background-color: #f1f3f4;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.audioContainerTwo h6{
+  position: absolute;
+  z-index: 2;
+  left: 46%;
+}
+
 .chapitres{
   font-family: 'EB Garamond', serif;
 }
@@ -171,15 +197,73 @@ audio:focus{
 position:absolute;
   content: attr(titles);
   background:white;
-  padding: 0.5rem;
+  padding: 0.2rem;
   border:1px solid;
   font-size:1rem;
+  top: 25%;
 }
-/* .word::after {
-  content: attr(title);
-  position: absolute;
-  top: 2em;
-  left: -10px;
-  font-size: 0.5em;
-  text-transform: uppercase;
+
+.tooltips{
+  cursor:pointer;
+  font-size: 25px;
+}
+
+.tooltips:hover{
+  text-decoration: underline;
+}
+
+.tooltips span {
+    display:none;
+    color:black;
+    font-size:1rem;
+    background-color:white;
+    border: solid 1px black;
+    font-family: sans-serif;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.tooltipsUp em {
+    display:none;
+    color:black;
+    font-size:1rem;
+    background-color:white;
+    border: solid 1px black;
+    font-family: sans-serif;
+    padding-left:10px;
+    padding-right:10px;
+}
+.tooltipsUp:hover em {
+    display:block;
+    position:fixed;
+    overflow:hidden;
+}
+
+/* .tooltipsUp:hover{
+  font-style: italic;
 } */
+
+.tooltips:hover span {
+    display:block;
+    position:fixed;
+    overflow:hidden;
+}
+
+.chapitre1 p{
+  font-family: 'EB Garamond', serif;
+  color:black;
+  font-size: 25px;
+  text-align: justify;
+}
+
+.chapitre1{
+  text-align: center;
+}
+
+.fakeTab{
+  visibility: hidden;
+}
+
+em{
+  font-style: normal;
+}

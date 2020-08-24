@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Translate Reader</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Favicons -->
+
+<link rel="stylesheet" href="css/chanson.css">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .blueT{
+        /* color:blue; */
+      }
+
+      .cursiveR{
+        /* color:red; */
+      }
+      .navbar{
+        height:10vh;
+      }
+
+      .carouselImg{
+        width:1350px;
+        height:624px;
+      }
+
+
+      .carousel-caption{
+        color:black;
+      }
+
+      footer{
+        height:100px;
+      }
+
+      footer p{
+        padding-top: 30px;
+        text-align: center;
+      }
+
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+
+  </head>
+  <body id="bootstrap-overrides">
+    <header>
+      <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><span class="blueT">Translate</span><i class="cursiveR">Reader</i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="books.html">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="exercises.html">Exercises</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+</header>
+<br>
+<h1>Complétez la chanson</h1>
+<br>
+
+
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/45StmT-nHqw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><h2>Il Voyage - Françoise Hardy</h2></p>
+<br>
+<div class="chanson">
+  <h2>Lorsque vous lui parlez</h2>
+  <p>Cuando tu le hablas</p>
+  <h2>Il ne vous répond pas</h2>
+  <p>El no te responde</p>
+  <h2>Il semble vous <input type="text" id="regarder"   onchange="chansonWord(id)"><span class="hidden">regarder</span></h2>
+  <p>Parece que el te mira</p>
+  <h2>Vous croyez qu'il écoute</h2>
+  <p>Tu crees que el te escucha</p>
+  <h2>Ses yeux sont là sur vous</h2>
+  <p>Sus ojos están sobre ti</p>
+  <h2>Mais vous n'y <input type="text" id="lirez"   onchange="chansonWord(id)"><span class="hidden">lirez</span> pas</h2>
+  <p>Pero no leerás</p>
+  <h2>Ce qu'il pense de vous</h2>
+  <p>Lo que el piensa de ti</p>
+  <h2>Croyez-vous qu'il y pense ?</h2>
+  <p>¿Crees que el está pensando en eso?</p>
+  <br>
+  <h2>Ou bien vous marchez dans la <input type="text" id="rue"   onchange="chansonWord(id)"><span class="hidden">rue</span></h2>
+  <p>O bien ustedes caminan en la calle</p>
+  <h2>Il vous lâche le bras</h2>
+  <p>Se suelta de tu brazo</p>
+  <h2>Et ni vu ni connu</h2>
+  <p>Y ni visto ni conocido</p>
+  <h2>Il disparaît, il n'est plus là</h2>
+  <p>El desaparece, el ya no está</p>
+  <h2>Et vous allez <input type="text" id="souffrir"   onchange="chansonWord(id)"><span class="hidden">souffrir</span></h2>
+  <p>Y tu vas a sufrir</p>
+  <h2>Car même s'il revient</h2>
+  <p>Porque incluso si el regresa</p>
+  <h2>Un seul de ses sourires</h2>
+  <p>Una sola de sus sonrisas</p>
+  <h2>Et c'est je <input type="text" id="crois"   onchange="chansonWord(id)"><span class="hidden">crois</span></h2>
+  <p>Y yo creo que es</p>
+  <h2>Le piège dont on ne sort point</h2>
+  <p>La trampa de la que nunca salimos</p>
+  <br>
+  <h2>Voyez-vous il voyage</h2>
+  <p>Lo ves viajando</p>
+  <h2>Et il n'a pas besoin de vous</h2>
+  <p>Y el no necesita de ti</p>
+  <h2>Là-haut sur son <input type="text" id="nuage"   onchange="chansonWord(id)"><span class="hidden">nuage</span></h2>
+  <p>Allá arriba en su nube</p>
+  <h2>Il voyage</h2>
+  <p>El viaja</p>
+  <br>
+  <h2>Ou bien vous flottez dans vos rêves</h2>
+  <p>O bien flotas en tus sueños</p>
+  <h2>Le cœur <input type="text" id="contre"   onchange="chansonWord(id)"><span class="hidden">contre</span> son cœur</h2>
+  <p>El corazón contra su corazón</p>
+  <h2>Quand voilà qu'il se lève</h2>
+  <p>Cuando el se levanta</p>
+  <h2>En confisquant vos tout à l'heure</h2>
+  <p>Confiscando tu hasta luego</p>
+  <h2>Et vous allez <input type="text" id="souffrir"   onchange="chansonWord(id)"><span class="hidden">souffrir</span></h2>
+  <p>Y tu vas a sufrir</p>
+  <h2>Car même s'il revient</h2>
+  <p>Porque incluso si el regresa</p>
+  <h2>Sans lui, sans sourire</h2>
+  <p>Sin el, sin sonreír</p>
+  <h2>Votre <input type="text" id="ciel"   onchange="chansonWord(id)"><span class="hidden">ciel</span> crève</h2>
+  <p>Tu cielo se esta rompiendo</p>
+  <h2>Autour du soleil qui s'éteint</h2>
+  <p>Alrededor del sol que se apaga</p>
+  <h2>Voyez-vous il voyage</h2>
+  <p>Lo ves viajando</p>
+  <h2>A-t-il seul'ment besoin de vous?</h2>
+  <p>¿Solo te necesita a ti?</p>
+  <h2>Là-haut sur son <input type="text" id="nuage"   onchange="chansonWord(id)"><span class="hidden">nuage</span></h2>
+  <p>Allá arriba en su nube</p>
+  <h2>Il voyage</h2>
+  <p>El viaja</p>
+
+<h2 class="note">Note: </h>
+<h2> </h2>
+</div>
+
+
+
+<br>
+<br>
+<footer class="text-muted navbar-dark bg-dark">
+  <div class="container">
+    <p> &copy; TranslateReader 2020</p>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="javascript/chanson.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Translate Reader</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Favicons -->
+
+<link rel="stylesheet" href="css/chanson.css">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .blueT{
+        /* color:blue; */
+      }
+
+      .cursiveR{
+        /* color:red; */
+      }
+      .navbar{
+        height:10vh;
+      }
+
+      .carouselImg{
+        width:1350px;
+        height:624px;
+      }
+
+
+      .carousel-caption{
+        color:black;
+      }
+
+      footer{
+        height:100px;
+      }
+
+      footer p{
+        padding-top: 30px;
+        text-align: center;
+      }
+
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+
+  </head>
+  <body id="bootstrap-overrides">
+    <header>
+      <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><span class="blueT">Translate</span><i class="cursiveR">Reader</i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="books.html">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="exercises.html">Exercises</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+</header>
+<br>
+<h1>Complétez la chanson</h1>
+<br>
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/btID6EEsgQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><h2>Mourir Vieux - Tim Dup</h2></p>
+<br>
+<div class="chanson">
+  <h2>Tes boucles d’ébène</h2>
+  <p>Tus rizos de ébano</p>
+  <h2>Face à <input type="text" id="l'océan"   onchange="chansonWord(id)"><span class="hidden">l'océan</span></h2>
+  <p>Frente al oceano</p>
+  <h2>Contemplent la plaine</h2>
+  <p>Contemplando la llanura</p>
+  <h2>Comme effleure le vent</h2>
+  <p>Como roza el viento</p>
+  <h2><input type="text" id="sous"   onchange="chansonWord(id)"><span class="hidden">Sous</span> les perles brunes</h2>
+  <p>Bajo las perlas marrones</p>
+  <h2>Et les ciels d’ivoire</h2>
+  <p>Y los cielos de marfil</p>
+  <h2>Dans les mers, les dunes</h2>
+  <p>En los mares, las dunas</p>
+  <h2>Où l’on <input type="text" id="vient"   onchange="chansonWord(id)"><span class="hidden">vient</span> s’asseoir</h2>
+  <p>Donde venimos a sentarnos</p>
+  <h2>On prendra le temps</h2>
+  <p>Nos tomaremos el tiempo</p>
+  <h2>De tout voir</h2>
+  <p>De ver todo</p>
+  <h2>D’aimer <input type="text" id="chaque"   onchange="chansonWord(id)"><span class="hidden">chaque</span> instant</h2>
+  <p>De amar cada instante</p>
+  <h2>Comme un dernier soir</h2>
+  <p>Como una última noche</p>
+<br>
+  <h2>Je <input type="text" id="veux"   onchange="chansonWord(id)"><span class="hidden">veux</span> mourir vieux</h2>
+  <p>Yo quiero morir viejo</p>
+  <h2>Dans tes bras de soie</h2>
+  <p>En tus brazos de seda</p>
+  <h2><input type="text" id="sous"   onchange="chansonWord(id)"><span class="hidden">Sous</span> un ciel pluvieux</h2>
+  <p>Bajo un cielo lluvioso</p>
+  <h2>Pour que l’on s’y noie</h2>
+  <p>Para que nos ahoguemos allí</p>
+  <h2>Je n’ai qu’un seul vœu</h2>
+  <p>Yo tengo un solo deseo</p>
+  <h2><input type="text" id="avant"   onchange="chansonWord(id)"><span class="hidden">Avant</span> l’au-delà</h2>
+  <p>Antes de la otra vida</p>
+  <h2>C’est ton sel, ton feu</h2>
+  <p>Es tu sal, tu fuego</p>
+  <h2>Pour brûler ma <input type="text" id="voix"   onchange="chansonWord(id)"><span class="hidden">voix</span></h2>
+  <p>Para quemar mi voz</p>
+  <br>
+  <h2>On dira jamais</h2>
+  <p>Diremos nunca</p>
+  <h2>On dira toujours</h2>
+  <p>Diremos siempre</p>
+  <h2>Comme en javanais</h2>
+  <p>Como en javanés</p>
+  <h2>On fera <input type="text" id="l'amour"   onchange="chansonWord(id)"><span class="hidden">l’amour</span></h2>
+  <p>Haremos el amor</p>
+  <h2>On brisera les chaînes</h2>
+  <p>Romperemos las cadenas</p>
+  <h2>De nos prisons d’or</h2>
+  <p>De nuestras prisiones de oro</p>
+  <h2>Du jardin d’Éden</h2>
+  <p>Del jardin del Edén</p>
+  <h2>Pour tromper la <input type="text" id="mort"   onchange="chansonWord(id)"><span class="hidden">mort</span></h2>
+  <p>Para engañar a la muerte</p>
+  <h2>On s’envolera</h2>
+  <p>Nos iremos volando</p>
+  <h2>Tout là-haut</h2>
+  <p>Allá arriba</p>
+  <h2>Emprunter les <input type="text" id="lunes"   onchange="chansonWord(id)"><span class="hidden">lunes</span></h2>
+  <p>Pedir prestadas las lunas</p>
+  <h2>Sombrer dans les eaux</h2>
+  <p>Hundirse en las aguas</p>
+  <br>
+  <h2>Je <input type="text" id="veux"   onchange="chansonWord(id)"><span class="hidden">veux</span> mourir vieux</h2>
+  <p>Yo quiero morir viejo</p>
+  <h2>Dans tes bras de soie</h2>
+  <p>En tus brazos de seda</p>
+  <h2><input type="text" id="sous"   onchange="chansonWord(id)"><span class="hidden">Sous</span> un ciel pluvieux</h2>
+  <p>Bajo un cielo lluvioso</p>
+  <h2>Pour que l’on s’y noie</h2>
+  <p>Para que nos ahoguemos allí</p>
+  <h2>Je n’ai qu’un seul vœu</h2>
+  <p>Yo tengo un solo deseo</p>
+  <h2><input type="text" id="avant"   onchange="chansonWord(id)"><span class="hidden">Avant</span> l’au-delà</h2>
+  <p>Antes de la otra vida</p>
+  <h2>C’est ton sel, ton feu</h2>
+  <p>Es tu sal, tu fuego</p>
+  <h2>Pour brûler ma <input type="text" id="voix"   onchange="chansonWord(id)"><span class="hidden">voix</span></h2>
+  <p>Para quemar mi voz</p>
+  <br>
+  <h2>Dans les champs d’oranges</h2>
+  <p>En los campos de naranjas</p>
+  <h2>De Galice et d’Andalousie</h2>
+  <p>De Galicia y de Andalucía</p>
+  <h2>Se suffire <input type="text" id="ensemble"   onchange="chansonWord(id)"><span class="hidden">ensemble</span></h2>
+  <p>Es suficiente juntos</p>
+  <h2>De délices et de fruits</h2>
+  <p>De delicias y de frutas</p>
+  <h2>Se coucher à l’aube</h2>
+  <p>Acostarse al alba</p>
+  <h2>Rassasiés de la <input type="text" id="vie"   onchange="chansonWord(id)"><span class="hidden">vie</span></h2>
+  <p>Satisfecho con la vida</p>
+  <h2>Dans le bleu, dans le mauve</h2>
+  <p>Con el azul, con el malva</p>
+  <h2>De l’éternelle nuit</h2>
+  <p>De la noche eterna</p>
+  <br>
+  <h2>Je <input type="text" id="veux"   onchange="chansonWord(id)"><span class="hidden">veux</span> mourir vieux</h2>
+  <p>Yo quiero morir viejo</p>
+  <h2>Dans tes bras de soie</h2>
+  <p>En tus brazos de seda</p>
+  <h2><input type="text" id="sous"   onchange="chansonWord(id)"><span class="hidden">Sous</span> un ciel pluvieux</h2>
+  <p>Bajo un cielo lluvioso</p>
+  <h2>Pour que l’on s’y noie</h2>
+  <p>Para que nos ahoguemos allí</p>
+  <h2>Je n’ai qu’un seul vœu</h2>
+  <p>Yo tengo un solo deseo</p>
+  <h2><input type="text" id="avant"   onchange="chansonWord(id)"><span class="hidden">Avant</span> l’au-delà</h2>
+  <p>Antes de la otra vida</p>
+  <h2>C’est ton sel, ton feu</h2>
+  <p>Es tu sal, tu fuego</p>
+  <h2>Pour brûler ma voix</h2>
+  <p>Para quemar mi voz</p>
+<h2 class="note">Note: </h>
+<h2> </h2>
+</div>
+
+
+
+
+
+<br>
+<br>
+<footer class="text-muted navbar-dark bg-dark">
+  <div class="container">
+    <p> &copy; TranslateReader 2020</p>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="javascript/chanson.js" charset="utf-8"></script>
+</body>
+</html>

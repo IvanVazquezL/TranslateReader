@@ -1,149 +1,299 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>TranslateReader</title>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles3.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Translate Reader</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Favicons -->
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .blueT{
+        /* color:blue; */
+      }
+
+      .cursiveR{
+        /* color:red; */
+      }
+      .navbar{
+        height:10vh;
+      }
+
+      .carouselImg{
+        width:1350px;
+        height:624px;
+      }
+
+
+      .carousel-caption{
+        color:black;
+      }
+
+      footer{
+        height:100px;
+      }
+
+      footer p{
+        padding-top: 30px;
+        text-align: center;
+      }
+
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
   </head>
   <body>
-    <div class="audioContainer hidden">
-      <h6>À Léon Werth</h6>
-      <audio controls controlsList="nodownload" class="audioDedicace">
-        <source src="audios/dedicace.mp3" type="audio/mpeg">
-      </audio>
+    <header>
+      <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><span class="blueT">Translate</span><i class="cursiveR">Reader</i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="books.html">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="exercises.html">Exercises</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+</header>
+<main role="main">
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="carouselImg" src="https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/v1555439022/shape/mentalfloss/the-little-prince-best-quotes-cover-800x469.jpg?itok=0XP8DR9i" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Read Le Petit Prince</h5>
+          <p>Translated into English and Spanish</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="carouselImg" src="https://mtv-intl.mtvnimages.com/uri/mgid:arc:content:mtv.es:d13c95a0-a6d4-11e4-bd9d-a4badb20dab5?ep=mtv.es&stage=live&format=jpg&quality=0.8&quality=0.85&width=640&height=361&crop=true" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Complete the Songs</h5>
+          <p>Play to complete the french lyrics</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="carouselImg" src="https://images2.minutemediacdn.com/image/upload/c_crop,h_1195,w_2127,x_0,y_0/f_auto,q_auto,w_1100/v1586626259/shape/mentalfloss/606627-gettyimages-1080967246.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Introduce yourself in french</h5>
+          <p>Create your own paragraph to introduce you </p>
+        </div>
+      </div>
     </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 
-
+  <div class="album py-5 bg-light">
     <div class="container">
-      <div class="row hidden">
-        <div class="col-12 page">
-          <div class="title">
-            <div class="title6">
-              <h1>Le&nbspPetit&nbsp&nbspPrince</h1>
-              <h2>Antoine&nbsp de&nbsp Saint - Exupéry</h2>
-            </div>
-            <div class="stars">
-              <h1>&nbsp&nbsp&nbsp&nbsp&nbsp*</h1>
-              <h1>&nbsp&nbsp*</h1>
-              <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*</h1>
-              <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*</h1>
-              <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 page">
-          <div class="title">
-            <div class="title4">
-              <h1>Le Petit Prince</h1>
-              <h2>Antoine de Saint-Exupéry</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 page">
-          <div class="contents">
-            <a href="#dedicace">À Léon Werth</a><br>
-            <a href="#chapitre1">Premier Chapitre</a><br>
-            <a href="#chapitre2">II</a><br>
-            <a href="#chapitre3">III</a><br>
-            <a href="#chapitre4">IV</a><br>
-            <a href="#chapitre5">V</a><br>
-            <a href="#chapitre6">VI</a><br>
-            <a href="#chapitre7">VII</a><br>
-            <a href="#chapitre8">VIII</a><br>
-            <a href="#chapitre9">IX</a><br>
-            <a href="#chapitre10">X</a><br>
-            <a href="#chapitre11">XI</a><br>
-            <a href="#chapitre12">XII</a><br>
-            <a href="#chapitre13">XIII</a><br>
-            <a href="#chapitre14">XIV</a><br>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 page">
-          <div class="contents">
-            <a href="#chapitre15">XV</a><br>
-            <a href="#chapitre16">XVI</a><br>
-            <a href="#chapitre17">XVII</a><br>
-            <a href="#chapitre18">XVIII</a><br>
-            <a href="#chapitre19">XIX</a><br>
-            <a href="#chapitre20">XX</a><br>
-            <a href="#chapitre21">XXI</a><br>
-            <a href="#chapitre22">XXII</a><br>
-            <a href="#chapitre23">XXIII</a><br>
-            <a href="#chapitre24">XXIV</a><br>
-            <a href="#chapitre25">XXV</a><br>
-            <a href="#chapitre26">XXVI</a><br>
-            <a href="#chapitre27">XXVII</a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 page pageDedicace">
-          <div id="dedicace">
-              <h3><span class="word" title="Para">À</span>&nbsp&nbsp<a id="Leon" href="https://en.wikipedia.org/wiki/L%C3%A9on_Werth#Antoine_de_Saint-Exup%C3%A9ry" target="_blank">Léon&nbsp&nbspWerth</a></h3>
 
-              <p><span class="word" title="Pido">Je demande</span> <span class="word" title="perdón">pardon</span> <span class="word" title="a los">aux</span>
-<span class="word" title="niños">enfants</span> <span class="word" title="por haber">d’avoir</span> <span class="word" title="dedicado">dédié</span> <span class="word" title="este">ce</span> <span class="word" title="libro">livre</span> <span class="word" title="a">à</span>
-<span class="word" title="una">une</span> <span class="word" title="persona mayor">grande personne</span>. <span class="word" title="Tengo">J’ai</span> <span class="word" title="una">une</span>
-<span class="word" title="excusa">excuse</span> <span class="word" title="seria">sérieuse</span> : <span class="word" title="esta">cette</span> <span class="word" title="persona mayor">grande
-personne</span> <span class="word" title="es">est</span> <span class="word" title="el">le</span> <span class="word" title="mejor">meilleur</span> <span class="word" title="amigo">ami</span> <span class="word" title="que">que</span>
-<span class="word" title="tengo">j’ai</span> <span class="word" title="en el">au</span> <span class="word" title="mundo">monde</span>. <span class="word" title="Tengo">J’ai</span> <span class="word" title="una">une</span> <span class="word" title="otra">autre</span>
-<span class="word" title="excusa">excuse</span> : <span class="word" title="esta">cette</span> <span class="word" title="persona mayor">grande personne</span>
-<span class="word" title="puede">peut</span> <span class="word" title="comprender todo">tout comprendre</span>, <span class="word" title="incluso">même</span> <span class="word" title="los">les</span>
-<span class="word" title="libros">livres</span> <span class="word" title="para">pour</span> <span class="word" title="niños">enfants</span>. <span class="word" title="Tengo">J’ai</span> <span class="word" title="una">une</span>
-<span class="word" title="tercera">troisième</span> <span class="word" title="excusa">excuse</span> : <span class="word" title="esta">cette</span> <span class="word" title="persona mayor">grande
-personne</span> <span class="word" title="vive en Francia">habite la France</span> <span class="word" title="donde">où</span>
-<span class="word" title="tiene">elle a</span> <span class="word" title="hambre">faim</span> <span class="word" title="y">et</span> <span class="word" title="frío">froid</span>. <span class="word" title="Realmente necesita">Elle a bien besoin</span>
-<span class="word" title="ser">d’être</span> <span class="word" title="consolada">consolée</span>. <span class="word" title="Si">Si</span> <span class="word" title="todas">toutes</span> <span class="word" title="estas">ces</span>
-<span class="word" title="excusas">excuses</span> <span class="word" title="no son suficentes">ne suffisent pas</span>, <span class="word" title="me gustaría">je veux
-bien</span> <span class="word" title="dedicar">dédier</span> <span class="word" title="este">ce</span> <span class="word" title="libro">livre</span> <span class="word" title="al niño">à l’enfant</span>
-<span class="word" title="que fue">qu’a été</span> <span class="word" title="antes">autrefois</span> <span class="word" title="esta">cette</span> <span class="word" title="persona mayor">grande
-personne</span>. <span class="word" title="Todas">Toutes</span> <span class="word" title="las">les</span> <span class="word" title="personas mayores">grandes
-personnes</span> <span class="word" title="fueron primero">ont d’abord été</span> <span class="word" title="niños">des
-enfants</span>. (<span class="word" title="Pero">Mais</span> <span class="word" title="pocos">peu</span> <span class="word" title="de ellos">d’entre elles</span>
-<span class="word" title="lo recuerdan">s’en souviennent</span>.) <span class="word" title="Corrijo">Je corrige</span>
-<span class="word" title="entonces">donc</span> <span class="word" title="mi">ma</span> <span class="word" title="dedicatoria">dédicace</span> :</p>
-  <h3><span class="word" title="Para">À</span>&nbsp&nbsp<a id="Leon" href="https://en.wikipedia.org/wiki/L%C3%A9on_Werth#Antoine_de_Saint-Exup%C3%A9ry" target="_blank">Léon&nbsp&nbspWerth</a></h3>
-  <h5> <span class="word" title="Cuando">quand</span>&nbsp&nbsp<span class="word" title="el">il</span>
-<span class="word" title="era">était</span>&nbsp&nbsp<span class="word" title="niño">petit&nbsp&nbspgarçon</span></h5>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12 page">
-          <div class="">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12 page chapitres">
-          <div id="chapitre1">
-            <h1>PREMIER CHAPITRE</h1>
-            <br>
-            <span titles="incluso">meme</span>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="javascript/app3.js" charset="utf-8"></script>
-  </body>
+</main>
+
+
+
+
+
+
+
+
+
+<footer class="text-muted navbar-dark bg-dark">
+  <div class="container">
+    <p> &copy; TranslateReader 2020</p>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
 </html>

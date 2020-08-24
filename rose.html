@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Translate Reader</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Favicons -->
+
+<link rel="stylesheet" href="css/chanson.css">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .blueT{
+        /* color:blue; */
+      }
+
+      .cursiveR{
+        /* color:red; */
+      }
+      .navbar{
+        height:10vh;
+      }
+
+      .carouselImg{
+        width:1350px;
+        height:624px;
+      }
+
+
+      .carousel-caption{
+        color:black;
+      }
+
+      footer{
+        height:100px;
+      }
+
+      footer p{
+        padding-top: 30px;
+        text-align: center;
+      }
+
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+
+  </head>
+  <body id="bootstrap-overrides">
+    <header>
+      <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><span class="blueT">Translate</span><i class="cursiveR">Reader</i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="books.html">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="exercises.html">Exercises</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+</header>
+<br>
+<h1>Complétez la chanson</h1>
+<br>
+
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6A_lOwSnS8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><h2>La vie en rose - Zaz</h2></p>
+<br>
+<div class="chanson">
+  <h2>Des yeux qui font baisser les miens</h2>
+<p>Ojos que hacen bajar los míos</p>
+<h2>Un rire qui se perd sur sa <input type="text" id="bouche"   onchange="chansonWord(id)"><span class="hidden">bouche</span></h2>
+<p>Una risa que se pierde en su boca</p>
+<h2>Voilà le portrait sans retouche</h2>
+<p>Aquí esta el retrato sin retoques</p>
+<h2>De <input type="text" id="l'homme"   onchange="chansonWord(id)"><span class="hidden">l'homme</span> auquel j'appartiens</h2>
+<p>Del hombre al cual pertenezco</p>
+<br>
+<h2>Quand il me prend dans ses bras</h2>
+<p>Cuando el me toma en sus brazos</p>
+<h2>Qu'il me <input type="text" id="parle"   onchange="chansonWord(id)"><span class="hidden">parle</span> tout bas</h2>
+<p>El me susurra</p>
+<h2>Je vois la vie en rose</h2>
+<p>Yo veo la vida en rosa</p>
+<h2>Il me dit des mots d'amour</h2>
+<p>El me dice palabras de amor</p>
+<h2>Des mots de tous les <input type="text" id="jours"   onchange="chansonWord(id)"><span class="hidden">jours</span></h2>
+<p>Palabras de todos los días</p>
+<h2>Et ça me fait quelque chose</h2>
+<p>Y eso me hace algo</p>
+<br>
+<h2>Il est entré dans mon cœur</h2>
+<p>El ha entrado en mi corazón</p>
+<h2>Une part de <input type="text" id="bonheur"   onchange="chansonWord(id)"><span class="hidden">bonheur</span></h2>
+<p>Una rebanada de felicidad</p>
+<h2>Dont je connais la cause</h2>
+<p>Del cual conozco la causa</p>
+<h2>C'est lui pour moi</h2>
+<p>Es el para mi</p>
+<h2>Moi pour lui <input type="text" id="dans"   onchange="chansonWord(id)"><span class="hidden">dans</span> la vie</h2>
+<p>Yo para el en la vida</p>
+<h2>Il me l'a dit, l'a juré</h2>
+<p>El me lo ha dicho, lo juró</p>
+<h2>Pour la vie</h2>
+<p>Para toda la vida</p>
+<h2>Et dès que je l'aperçois</h2>
+<p>Y tan pronto que lo veo</p>
+<h2><input type="text" id="alors"   onchange="chansonWord(id)"><span class="hidden">Alors</span> je sens en moi</h2>
+<p>Entonces siento en mi</p>
+<h2>Mon cœur qui bat</h2>
+<p>Mi corazón que late</p>
+<br>
+<h2>Des nuits d'amour à plus finir</h2>
+<p>Noches de amor sin fin</p>
+<h2>Un grand <input type="text" id="bonheur"   onchange="chansonWord(id)"><span class="hidden">bonheur</span> qui prend sa place</h2>
+<p>Una grn felicidad que toma su lugar</p>
+<h2>Des ennuis, des chagrins s'effacent</h2>
+<p>Problemas, penas desaparecen</p>
+<h2>Heureux, heureux à en mourir</h2>
+<p>Feliz, feliz hasta morir</p>
+<br>
+<h2>Quand il me prend dans ses bras</h2>
+<p>Cuando el me toma en sus brazos</p>
+<h2>Qu'il me <input type="text" id="parle"   onchange="chansonWord(id)"><span class="hidden">parle</span> tout bas</h2>
+<p>El me susurra</p>
+<h2>Je vois la vie en rose</h2>
+<p>Yo veo la vida en rosa</p>
+<h2>Il me dit des mots d'amour</h2>
+<p>El me dice palabras de amor</p>
+<h2>Des mots de tous les <input type="text" id="jours"   onchange="chansonWord(id)"><span class="hidden">jours</span></h2>
+<p>Palabras de todos los días</p>
+<h2>Et ça me fait quelque chose</h2>
+<p>Y eso me hace algo</p>
+<br>
+<h2>Il est entré dans mon cœur</h2>
+<p>El ha entrado en mi corazón</p>
+<h2>Une part de <input type="text" id="bonheur"   onchange="chansonWord(id)"><span class="hidden">bonheur</span></h2>
+<p>Una rebanada de felicidad</p>
+<h2>Dont je connais la cause</h2>
+<p>Del cual conozco la causa</p>
+<h2>C'est lui pour moi</h2>
+<p>Es el para mi</p>
+<h2>Moi pour lui <input type="text" id="dans"   onchange="chansonWord(id)"><span class="hidden">dans</span> la vie</h2>
+<p>Yo para el en la vida</p>
+<h2>Il me l'a dit, l'a juré</h2>
+<p>El me lo ha dicho, lo juró</p>
+<h2>Pour la vie</h2>
+<p>Para toda la vida</p>
+<br>
+<h2>Et dès que je l'aperçois</h2>
+<p>Y tan pronto que lo veo</p>
+<h2><input type="text" id="alors"   onchange="chansonWord(id)"><span class="hidden">Alors</span> je sens en moi</h2>
+<p>Entonces siento en mi</p>
+<h2>Mon cœur qui bat</h2>
+<p>Mi corazón que late</p>
+<br>
+<h2>Et dès que je l'aperçois</h2>
+<p>Y tan pronto que lo veo</p>
+<h2><input type="text" id="alors"   onchange="chansonWord(id)"><span class="hidden">Alors</span> je sens en moi</h2>
+<p>Entonces siento en mi</p>
+<h2>Mon cœur qui bat</h2>
+<p>Mi corazón que late</p>
+<br>
+
+<h2 class="note">Note: </h>
+<h2> </h2>
+</div>
+
+
+
+
+<br>
+<br>
+<footer class="text-muted navbar-dark bg-dark">
+  <div class="container">
+    <p> &copy; TranslateReader 2020</p>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="javascript/chanson.js" charset="utf-8"></script>
+</body>
+</html>

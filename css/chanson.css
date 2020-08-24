@@ -1,0 +1,41 @@
+#bootstrap-overrides input{
+  width:100px;
+  /* height:30px; */
+  font-size: 20px;
+}
+
+#bootstrap-overrides p{
+  padding-bottom: 10px;
+}
+
+body{
+  text-align: center;
+}
+
+.chanson{
+  margin-left: 35%;
+text-align: left;
+
+}
+
+.chanson h2{
+  margin-bottom: 0
+}
+
+.chanson p{
+  margin-top: 0;
+  color: gray;
+  font-size: 1.5rem;
+}
+
+.hidden{
+  display: none;
+}
+
+.incorrect{
+  background-color: lightcoral;
+}
+
+.correct{
+  background-color: #90ee90;
+}

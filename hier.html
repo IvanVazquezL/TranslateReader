@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Translate Reader</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Favicons -->
+
+<link rel="stylesheet" href="css/chanson.css">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .blueT{
+        /* color:blue; */
+      }
+
+      .cursiveR{
+        /* color:red; */
+      }
+      .navbar{
+        height:10vh;
+      }
+
+      .carouselImg{
+        width:1350px;
+        height:624px;
+      }
+
+
+      .carousel-caption{
+        color:black;
+      }
+
+      footer{
+        height:100px;
+      }
+
+      footer p{
+        padding-top: 30px;
+        text-align: center;
+      }
+
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+
+  </head>
+  <body id="bootstrap-overrides">
+    <header>
+      <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><span class="blueT">Translate</span><i class="cursiveR">Reader</i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="books.html">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="exercises.html">Exercises</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+</header>
+<br>
+<h1>Complétez la chanson</h1>
+<br>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JSKAi8S9k1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><h2>C'était hier - Agustín Galiana</h2></p>
+<br>
+<div class="chanson">
+  <h2>On se croise au hasard</h2>
+  <p>Nos cruzamos al azar</p>
+  <h2>C'est fou il est si <input type="text" id="tard"   onchange="chansonWord(id)"><span class="hidden">tard</span></h2>
+  <p>Es una locura es tan tarde</p>
+  <h2>Dis moi comment vas-tu ?</h2>
+  <p>Dime ¿cómo estás?</p>
+  <h2>Qu'est ce que t'es devenu ?</h2>
+  <p>¿Qué has estado haciendo?</p>
+  <h2>Sur les <input type="text" id="bords"   onchange="chansonWord(id)"><span class="hidden">bords</span> du canal,</h2>
+  <p>A las orillas del canal</p>
+  <h2>Ton sourire m'as fait mal</h2>
+  <p>Tu sonrisa me lastima</p>
+  <h2>T'es comme l'été <input type="text" id="dernier"   onchange="chansonWord(id)"><span class="hidden">dernier</span></h2>
+  <p>Estas como el último verano</p>
+  <h2>Tu ne reviendras plus</h2>
+  <p>Tu no volverás</p>
+  <br>
+  <h2>Traverser le <input type="text" id="passé"   onchange="chansonWord(id)"><span class="miroir">passé</span></h2>
+  <p>Cruzando el pasado</p>
+  <h2>T’offrir une <input type="text" id="cigarette"   onchange="chansonWord(id)"><span class="hidden">cigarette</span></h2>
+  <p>Ofrecerte un cigarro</p>
+  <h2>Et lire dans tes pensées,</h2>
+  <p>Y leer tus pensamientos</p>
+  <h2>Si on allait faire la fête ?</h2>
+  <p>¿Y si fuéramos de fiesta?</p>
+  <h2>Je ne connais pas ton <input type="text" id="nom"   onchange="chansonWord(id)"><span class="hidden">nom</span></h2>
+  <p>No conozco tu nombre</p>
+  <h2>Mais je n'ai qu'une seule question</h2>
+  <p>Pero tengo una sola pregunta</p>
+  <h2>Qu'est ce que tu fais</h2>
+  <p>¿Que harás</p>
+  <h2>Les <input type="text" id="cent"   onchange="chansonWord(id)"><span class="hidden">cent</span> prochaines années ?</h2>
+  <p>los próximos cien años?</p>
+  <br>
+  <h2>C'était hier</h2>
+  <p>Fue ayer</p>
+  <h2>On prenait les routes à <input type="text" id="l'envers"   onchange="chansonWord(id)"><span class="hidden">l'envers</span></h2>
+  <p>Tomamos los caminos al revés</p>
+  <h2>C'était hier</h2>
+  <p>Fue ayer</p>
+  <h2>On s'aimait tout le temps</h2>
+  <p>Nos amábamos todo el tiempo</p>
+  <h2>C'était <input type="text" id="l'hiver"   onchange="chansonWord(id)"><span class="hidden">l'hiver</span></h2>
+  <p>Era invierno</p>
+  <h2>On caillait sous le réverbère</h2>
+  <p>Nos moríamos de frío bajo la farola</p>
+  <h2>C'était <input type="text" id="l'hiver"   onchange="chansonWord(id)"><span class="hidden">l'hiver</span></h2>
+  <p>Era invierno</p>
+  <h2>Ah le maudit printemps</h2>
+  <p>Ah la maldita primavera</p>
+  <br>
+  <h2>El amor el amor,</h2>
+  <h2>El amor el amor,</h2>
+  <h2>Fue ayer oh oh</h2>
+  <h2>El amor el amor,</h2>
+  <h2>El amor el amor</h2>
+  <h2>Fue ayer</h2>
+  <br>
+  <h2>Souviens toi, nos <input type="text" id="voyages"   onchange="chansonWord(id)"><span class="hidden">voyages</span></h2>
+  <p>Recuerdas tu nuestros viajes</p>
+  <h2>Sur les ports, le naufrage</h2>
+  <p>En los puertos, el naufragio</p>
+  <h2>Ma vie est un <input type="text" id="peu"   onchange="chansonWord(id)"><span class="hidden">peu</span> creuse</h2>
+  <p>Mi vida esta un poco hueca</p>
+  <h2>Et toi es-tu heureuse ?</h2>
+  <p>¿Y tu eres feliz?</p>
+  <h2>Pardonne moi, j'en dis <input type="text" id="trop"   onchange="chansonWord(id)"><span class="hidden">trop</span></h2>
+  <p>Perdóname, digo demasiado</p>
+  <h2>Je me tairai bientôt</h2>
+  <p>Me voy a callar pronto</p>
+  <h2>Le reflet de l'histoire</h2>
+  <p>El reflejo de la historia</p>
+  <h2>Me revient de ton <input type="text" id="miroir"   onchange="chansonWord(id)"><span class="hidden">trop</span></h2>
+  <p>Vuelve a mi desde tu espejo</p>
+  <br>
+  <h2>Traverser le <input type="text" id="passé"   onchange="chansonWord(id)"><span class="hidden">passé</span></h2>
+  <p>Cruzando el pasado</p>
+  <h2>Juste pour changer d'air</h2>
+  <p>Solo por un cambio de escenario</p>
+  <h2>Si tu n'es pas pressée,</h2>
+  <p>Si tu no tienes prisa</p>
+  <h2>Prenons un <input type="text" id="dernier"   onchange="chansonWord(id)"><span class="hidden">dernier</span> verre</h2>
+  <p>Tomemos un último trago</p>
+  <h2>La peine a débordé,</h2>
+  <p>El dolor se ha desbordado</p>
+  <h2>On a chacun la <input type="text" id="sienne"   onchange="chansonWord(id)"><span class="hidden">sienne</span></h2>
+  <p>Cada uno tiene el suyo</p>
+  <h2>Qu'est ce que tu fais</h2>
+  <p>¿Que harás</p>
+  <h2>Les quelques <input type="text" id="heures"   onchange="chansonWord(id)"><span class="hidden">heures</span> qui viennent?</h2>
+  <p>Las próximas horas?</p>
+  <br>
+  <h2>C'était hier</h2>
+  <p>Fue ayer</p>
+  <h2>On prenait les routes à <input type="text" id="l'envers"   onchange="chansonWord(id)"><span class="hidden">l'envers</span></h2>
+  <p>Tomamos los caminos al revés</p>
+  <h2>C'était hier</h2>
+  <p>Fue ayer</p>
+  <h2>On s'aimait tout le temps</h2>
+  <p>Nos amábamos todo el tiempo</p>
+  <h2>C'était <input type="text" id="l'hiver"   onchange="chansonWord(id)"><span class="hidden">l'hiver</span></h2>
+  <p>Era invierno</p>
+  <h2>On caillait sous le réverbère</h2>
+  <p>Nos moríamos de frío bajo la farola</p>
+  <h2>C'était <input type="text" id="l'hiver"   onchange="chansonWord(id)"><span class="hidden">l'hiver</span></h2>
+  <p>Era invierno</p>
+  <h2>Ah le maudit printemps</h2>
+  <p>Ah la maldita primavera</p>
+  <br>
+  <h2>El amor el amor,</h2>
+  <h2>El amor el amor</h2>
+  <h2>Fue ayer oh oh</h2>
+  <h2>El amor el amor,</h2>
+  <h2>El amor el amor</h2>
+  <h2>Fue ayer</h2>
+  <br>
+  <h2>Traverser, traverser le <input type="text" id="passé"   onchange="chansonWord(id)"><span class="miroir">passé</span></h2>
+  <p>Cruzando, cruzando el pasado</p>
+  <h2>Renverser le futur</h2>
+  <p>Revertir el futuro</p>
+  <h2>Retenter l'aventure enfin se <input type="text" id="laisser"   onchange="chansonWord(id)"><span class="hidden">laisser</span></h2>
+  <p>Reintentar la aventura finalmente déjate llevar</p>
+  <h2>Traverser</h2>
+  <p>Cruzando</p>
+  <h2>Soigner la blessure, je voudrais qu'on essaye</h2>
+  <p>Cura la herida, me gustaría que lo intentáramos</p>
+  <br>
+  <h2>C'était hier</h2>
+  <p>Fue ayer</p>
+  <h2>On prenait les routes à <input type="text" id="l'envers"   onchange="chansonWord(id)"><span class="hidden">l'envers</span></h2>
+  <p>Tomamos los caminos al revés</p>
+  <h2>C'était hier</h2>
+  <p>Fue ayer</p>
+  <h2>On s'aimait tout le temps</h2>
+  <p>Nos amábamos todo el tiempo</p>
+  <h2>C'était <input type="text" id="l'hiver"   onchange="chansonWord(id)"><span class="hidden">l'hiver</span></h2>
+  <p>Era invierno</p>
+  <h2>On caillait sous le réverbère</h2>
+  <p>Nos moríamos de frío bajo la farola</p>
+  <h2>C'était <input type="text" id="l'hiver"   onchange="chansonWord(id)"><span class="hidden">l'hiver</span></h2>
+  <p>Era invierno</p>
+  <h2>Ah le maudit printemps</h2>
+  <p>Ah la maldita primavera</p>
+  <br>
+  <h2>El amor el amor,</h2>
+  <h2>El amor el amor</h2>
+  <h2>Fue ayer oh oh</h2>
+  <h2>El amor el amor,</h2>
+  <h2>El amor el amor</h2>
+  <h2>Fue ayer</h2>
+<br>
+<h2 class="note">Note: </h>
+<h2> </h2>
+</div>
+
+
+
+
+
+
+<br>
+<br>
+<footer class="text-muted navbar-dark bg-dark">
+  <div class="container">
+    <p> &copy; TranslateReader 2020</p>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="javascript/chanson.js" charset="utf-8"></script>
+</body>
+</html>
