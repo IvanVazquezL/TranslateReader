@@ -4,10 +4,12 @@ let correctAnswers = 0;
 let gradeH2 = document.querySelector(".note");
 
 function chansonWord(id){
+  console.log(id);
   const answer = document.getElementById(id);
   const sibling = document.getElementById(id).nextSibling;
-
-  if((answer.value.toLowerCase())===id){
+console.log(answer.value.toLowerCase());
+console.log(answer.name);
+  if((answer.value.toLowerCase())===answer.name){
     answer.classList.add("hidden");
     sibling.classList.remove("hidden");
     sibling.classList.add("correct");
